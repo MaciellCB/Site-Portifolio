@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pedro Maciel — Portfólio & Currículo</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Portfólio de Pedro Maciel — Full Stack & Digital Artist" />
+</head>
+<body>
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-title">Full Stack & Digital Artist</div>
+        <div class="brand-sub">Desenvolvedor Full-Stack | Designer | Artista</div>
+      </div>
+      <nav class="main-nav">
+        <a href="#home">Home</a>
+        <a id="nav-curriculo" href="#curriculo">Currículo</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#experiencias">Experiências</a>
+        <a href="#formacao">Formação</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="site-main">
+    <!-- HERO -->
+    <section class="hero container" id="home">
+      <div class="hero-left">
+        <p class="hello">Olá</p>
+        <h1 class="name">Sou Pedro Maciel</h1>
+        <p class="short-desc">
+          Sou estudante de Análise e Desenvolvimento de Sistemas (ADS) na Fatec São José dos Campos.
+          Tenho paixão por criar soluções que unem tecnologia e estética — desenvolvo interfaces e aplicativos com foco em usabilidade,
+          e também trabalho com edição e arte digital. Busco oportunidades em que eu possa aprender e contribuir com projetos reais,
+          especialmente nas áreas de atendimento ao público, design e desenvolvimento full-stack.
+        </p>
+        <a class="cta" href="mailto:pedrolucasmacielcaputo12@gmail.com">Entrar em contato</a>
+      </div>
+
+      <div class="hero-right">
+        <div class="portrait">
+          <div class="portrait-bg" ></div>
+          <img src="eu.png" alt="Pedro Maciel" class="portrait-img" />
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVIÇOS (abas) -->
+    <section id="servicos" class="container services">
+      <div class="services-tabs">
+        <button class="tab-btn active" data-tab="serv-1">Todos</button>
+        <button class="tab-btn" data-tab="serv-2">Sites</button>
+        <button class="tab-btn" data-tab="serv-3">Desing</button>
+        <button class="tab-btn" data-tab="serv-4">Arte Digital</button>
+        <button class="tab-btn" data-tab="serv-5">Edição</button>
+      </div>
+
+      <div class="tab-content">
+        <div id="serv-1" class="tab-pane active">
+          <h3>Selecione um serviço</h3>
+          <p>
+            Busco experiência no mercado de trabalho, especialmente em áreas que envolvam atendimento ao público, tecnologia e/ou design. Estou sempre aberto a diferentes oportunidades que me permitam desenvolver novas habilidades.
+          </p>
+        </div>
+
+        <div id="serv-2" class="tab-pane">
+          <h3>Sites</h3>
+          <p>Desenvolvimento front-end e back-end: HTML, CSS, Angular, C#, responsividade e implementação de componentes.</p>
+        </div>
+
+        <div id="serv-3" class="tab-pane">
+          <h3>Desing</h3>
+          <p>Identidade visual, layouts, logos e materiais gráficos para redes sociais e web.</p>
+        </div>
+
+        <div id="serv-4" class="tab-pane">
+          <h3>Arte Digital</h3>
+          <p>Ilustração digital, tratamento de imagens e assets para projetos criativos.</p>
+        </div>
+
+        <div id="serv-5" class="tab-pane">
+          <h3>Edição</h3>
+          <p>Edição e finalização de vídeos (YouTube, Instagram) e tratamento de imagens (Photoshop, Canva).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIÊNCIAS / PORTFÓLIO - filtro (controla quais seções aparecem) -->
+    <section class="container experiences" id="experiencias">
+      <h2>Minhas Experiências & Portfólio</h2>
+
+      <div class="exp-filters">
+        <button class="exp-filter active" data-filter="all">Todos</button>
+        <button class="exp-filter" data-filter="sites">Sites</button>
+        <button class="exp-filter" data-filter="desing">Desing</button>
+        <button class="exp-filter" data-filter="arte">Arte Digital</button>
+        <button class="exp-filter" data-filter="edicao">Edição</button>
+      </div>
+
+      <div class="type-section" data-type="sites">
+        <h3 class="type-title">Sites</h3>
+        <div class="carousel" data-carousel="sites">
+          <button class="carousel-arrow prev" data-action="prev" aria-label="Anterior">&lt;</button>
+          <div class="carousel-viewport">
+            <div class="carousel-track">
+              <div class="card">Site - Loja Exemplo</div>
+              <div class="card">Site - Projeto Y</div>
+              <div class="card">Site - Demo</div>
+            </div>
+          </div>
+          <button class="carousel-arrow next" data-action="next" aria-label="Próximo">&gt;</button>
+        </div>
+      </div>
+
+      <div class="type-section" data-type="desing">
+        <h3 class="type-title">Desing</h3>
+        <div class="carousel" data-carousel="desing">
+          <button class="carousel-arrow prev" data-action="prev" aria-label="Anterior">&lt;</button>
+          <div class="carousel-viewport">
+            <div class="carousel-track">
+              <div class="card">Logo - Marca X</div>
+              <div class="card">Cartaz - Evento</div>
+              <div class="card">Identidade - Empresa</div>
+            </div>
+          </div>
+          <button class="carousel-arrow next" data-action="next" aria-label="Próximo">&gt;</button>
+        </div>
+      </div>
+
+      <div class="type-section" data-type="arte">
+        <h3 class="type-title">Arte Digital</h3>
+        <div class="carousel" data-carousel="arte">
+          <button class="carousel-arrow prev" data-action="prev" aria-label="Anterior">&lt;</button>
+          <div class="carousel-viewport">
+            <div class="carousel-track">
+              <div class="card">Ilustração - Personagem</div>
+              <div class="card">Arte de Capa</div>
+            </div>
+          </div>
+          <button class="carousel-arrow next" data-action="next" aria-label="Próximo">&gt;</button>
+        </div>
+      </div>
+
+      <div class="type-section" data-type="edicao">
+        <h3 class="type-title">Edição</h3>
+        <div class="carousel" data-carousel="edicao">
+          <button class="carousel-arrow prev" data-action="prev" aria-label="Anterior">&lt;</button>
+          <div class="carousel-viewport">
+            <div class="carousel-track">
+              <div class="card">Edição - Vídeo Promo</div>
+              <div class="card">Montagem - Reels</div>
+            </div>
+          </div>
+          <button class="carousel-arrow next" data-action="next" aria-label="Próximo">&gt;</button>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- FORMAÇÃO ACADÊMICA -->
+    <section class="container formation" id="formacao">
+      <h2>Formação Acadêmica</h2>
+      <div class="edu-card">
+        <h3>Análise e Desenvolvimento de Sistemas — Fatec (2025 - Atual)</h3>
+        <p>Ensino Médio — Colégio Embraer (Concluído em 2024)</p>
+      </div>
+
+      <div class="courses">
+        <h3>Cursos e Formações</h3>
+        <ul class="courses-list">
+          <li>Oxford Placement Test</li>
+          <li>C#: Aplicando Orientação a Objeto</li>
+          <li>C#: Primeiras Aplicações</li>
+          <li>C#: Variáveis e Tipos</li>
+          <li>HTML e CSS: ambientes de desenvolvimento, estrutura de arquivos e tags</li>
+          <li>HTML e CSS: Classes, posicionamento e Flexbox</li>
+          <li>HTML e CSS: cabeçalho, footer e variáveis CSS</li>
+          <li>HTML e CSS: trabalhando com responsividade e publicação de projetos</li>
+          <li>Matemática sem Fronteiras</li>
+          <li>Olimpíada de Matemática</li>
+          <li>Projeto de Tecnologia Sustentável</li>
+          <li>OBT (Olimpíada Brasileira de Tecnologia)</li>
+        </ul>
+
+        <div class="courses-actions">
+          <a class="btn-outline" href="https://docs.google.com/document/d/1x_x4R2CaEo0SVGVux65JxAvLfon-ywLvobR3vHFpYBs/edit?usp=sharing" target="_blank" rel="noopener">Ver todos (certificados)</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIÊNCIAS PROFISSIONAIS / CURRÍCULO -->
+    <section class="container resume" id="curriculo-section">
+      <h2>Experiência Profissional</h2>
+
+      <div class="job">
+        <h3>Freelancer — Edição de Imagens e Vídeos (2020 – Atual)</h3>
+        <ul>
+          <li>Edição e tratamento de imagens para redes sociais e materiais promocionais.</li>
+          <li>Edição de vídeos para YouTube, Instagram e outras plataformas.</li>
+          <li>Atendimento direto a clientes para entender e executar demandas.</li>
+        </ul>
+      </div>
+
+      <div class="job">
+        <h3>Estagiário — JawsTech (Desenvolvimento Web Full-Stack) (jun/2025 – Atual)</h3>
+        <ul>
+          <li>Apoio no desenvolvimento front-end e back-end.</li>
+          <li>Implementação de lógicas e componentes responsivos.</li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- RODAPÉ / CONTATOS -->
+  <footer id="contato" class="site-footer">
+    <div class="container footer-inner">
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/pedro-maciel-391718325" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden><path d="M4 4h4v16H4zM8 4a2 2 0 1 1 0-4 2 2 0 0 1 0 4zM12 8h4v1.9c.6-1.1 2.1-2.3 4.3-2.3 4.6 0 5.7 3 5.7 6.9V20h-4v-5.1c0-1.2 0-2.7-1.6-2.7-1.6 0-1.8 1.2-1.8 2.6V20h-4V8z" fill="currentColor"/></svg>
+          Me contate pelo Linkedin
+        </a>
+
+        <a href="mailto:pedrolucasmacielcaputo12@gmail.com">Converse comigo por e-mail</a>
+        <a href="https://github.com/MaciellCB" target="_blank" rel="noopener">Veja alguns projetos pelo Git Hub</a>
+        <a href="https://www.instagram.com" target="_blank" rel="noopener">Me conheça Pelo Instagram</a>
+      </div>
+
+      <div class="mini-cv">
+        <p><strong>Pedro Lucas Maciel C Barbosa</strong><br/>
+        pedrolucasmacielcaputo12@gmail.com | (12) 98701-8144</p>
+        <p>São José dos Campos, SP</p>
+      </div>
+    </div>
+    <div class="copyright">© <span id="year"></span> Pedro Maciel — Portfólio</div>
+  </footer>
+
+  <!-- MODAL CURRÍCULO (abre ao clicar em "Currículo" no header) -->
+  <div id="cv-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="cv-modal-title">
+    <div class="modal-panel">
+      <button class="modal-close" id="cv-close" aria-label="Fechar">✕</button>
+      <h3 id="cv-modal-title">Currículo</h3>
+      <p>Escolha uma opção:</p>
+      <div class="modal-actions">
+        <a class="btn" id="cv-download" href="https://docs.google.com/document/d/13Xu0zYKgCcJxcv5L-mklK3HjOZSOlRaCqek2eY09I4U/export?format=pdf" target="_blank" rel="noopener">Baixar CV (PDF)</a>
+        <a class="btn-outline" id="cv-open" href="https://docs.google.com/document/d/13Xu0zYKgCcJxcv5L-mklK3HjOZSOlRaCqek2eY09I4U/edit?usp=sharing" target="_blank" rel="noopener">Abrir online (Google Docs)</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
