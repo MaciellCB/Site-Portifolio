@@ -1,4 +1,3 @@
-// script.js - uso mínimo de JS para:
 // 1) abas "Serviços"
 // 2) filtros que mostram/ocultam as seções (Todos, Sites, Desing, Arte Digital, Edição)
 // 3) carrosséis por setas (translateX)
@@ -36,12 +35,12 @@ document.addEventListener("DOMContentLoaded", function(){
           sec.style.display = "none"; // ocultar
         }
       });
-      // ao trocar filtro, resetamos todos os carrosséis para posição 0 (boa UX)
+      // qnd troca o fltro ele rsea o carossel
       document.querySelectorAll(".carousel-track").forEach(t => t.style.transform = "translateX(0)");
     });
   });
 
-  /* --------- Carrossel (cada .carousel tem setas prev/next) --------- */
+  /* --------- Carrossel setinhas) --------- */
   document.querySelectorAll(".carousel").forEach(car => {
     const track = car.querySelector(".carousel-track");
     const prev = car.querySelector("[data-action='prev']");
